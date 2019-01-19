@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JFrameDemo.iml" filepath="$PROJECT_DIR$/JFrameDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../Templates/Templates.iml" filepath="$PROJECT_DIR$/../Templates/Templates.iml" />
     </modules>
   </component>
 </project>

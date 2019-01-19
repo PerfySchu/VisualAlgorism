@@ -1,8 +1,8 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.geom.Ellipse2D;
 
 /**
+ * 视图层
  * @ClassName AlgoFrame
  * @Author PerfySchu
  * @Date 2019/1/18 10:33
@@ -43,9 +43,10 @@ public class AlgoFrame extends JFrame {
         return canvasHeight;
     }
 
-    private Circle[] circles;
-    public void render(Circle[] circles){
-        this.circles = circles;
+    //TODO:设置自己的数据
+    private Object data;
+    public void render(Object data){
+        this.data = data;
         this.repaint();
     }
 
@@ -67,15 +68,7 @@ public class AlgoFrame extends JFrame {
             g2d.addRenderingHints(hints);
 
             //具体绘制
-            AlgoVisHelper.setStrokeWidth(g2d, 1);
-            AlgoVisHelper.setColor(g2d, Color.RED);
-            for(Circle circle : circles){
-                if(circle.isFilled) {
-                    AlgoVisHelper.fillCircle(g2d, circle.x, circle.y, circle.getR());
-                }else{
-                    AlgoVisHelper.strokeCircle(g2d, circle.x, circle.y, circle.getR());
-                }
-            }
+            //TODO: 绘制自己的数据data
         }
 
         @Override

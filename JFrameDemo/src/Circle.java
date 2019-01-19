@@ -1,3 +1,5 @@
+import java.awt.*;
+
 /**
  * @ClassName Circle
  * @Author PerfySchu
@@ -8,6 +10,7 @@ public class Circle {
     public int x,y;
     private int r;
     public int vx, vy;
+    public boolean isFilled = false;
 
     public Circle(int x, int y, int r, int vx, int vy) {
         this.x = x;
@@ -22,10 +25,7 @@ public class Circle {
     }
 
     public void move(int minx, int miny, int maxx, int maxy, Circle[] circles){
-        x += vx;
-        y += vy;
-
-        //圆之间的碰撞检测
+        //圆之间的碰撞检测(未完成，会发生嵌套锁死)
 //        for(Circle circle : circles){
 //            if(circle != this){
 //                if(isCollisionWithCircle(this.x, this.y, circle.x, circle.y, this.r, circle.getR())){
@@ -35,12 +35,15 @@ public class Circle {
 //                    this.vy = circle.vy;
 //                    circle.vx = tempvx;
 //                    circle.vy = tempvy;
+//                    this.isFilled = !this.isFilled;
+//                    circle.isFilled = !circle.isFilled;
 //                }
 //            }
 //        }
 
+        x += vx;
+        y += vy;
         checkCollision(minx, miny, maxx, maxy);
-
     }
 
     private void checkCollision(int minx, int miny, int maxx, int maxy){
@@ -92,4 +95,10 @@ public class Circle {
         }
         return false;
     }
+
+    public boolean contain(Point p){
+        return  (x - p.x) * (x - p.x) + (y - p.y) * (y - p.y) <= r * r;
+
+    }
+
 }
