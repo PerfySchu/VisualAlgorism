@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../GetPi/GetPi.iml" filepath="$PROJECT_DIR$/../GetPi/GetPi.iml" />
       <module fileurl="file://$PROJECT_DIR$/JFrameDemo.iml" filepath="$PROJECT_DIR$/JFrameDemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../MoneyProblem/MoneyProblem.iml" filepath="$PROJECT_DIR$/../MoneyProblem/MoneyProblem.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Templates/Templates.iml" filepath="$PROJECT_DIR$/../Templates/Templates.iml" />
     </modules>
   </component>
