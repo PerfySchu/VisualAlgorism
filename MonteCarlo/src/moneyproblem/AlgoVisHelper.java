@@ -1,10 +1,12 @@
+package moneyproblem;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
 import java.awt.geom.Rectangle2D;
 
 /**
- * @ClassName AlgoVisHelper
+ * @ClassName moneyproblem.AlgoVisHelper
  * @Author PerfySchu
  * @Date 2019/1/18 11:20
  * @Version 1.0

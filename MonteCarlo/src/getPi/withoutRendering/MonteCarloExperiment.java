@@ -1,4 +1,4 @@
-package withoutRendering;
+package getPi.withoutRendering;
 
 import java.awt.*;
 

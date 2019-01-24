@@ -1,9 +1,11 @@
+package moneyproblem;
+
 import java.awt.*;
 import java.awt.event.KeyAdapter;
 import java.awt.event.MouseAdapter;
 
 /**
- * @ClassName AlgoVisualizer
+ * @ClassName moneyproblem.AlgoVisualizer
  * @Author PerfySchu
  * @Date 2019/1/19 9:40
  * @Version 1.0

@@ -1,10 +1,11 @@
+package getPi;
+
 import javax.swing.*;
 import java.awt.*;
-import java.util.LinkedList;
 
 /**
  * 视图层
- * @ClassName AlgoFrame
+ * @ClassName moneyproblem.AlgoFrame
  * @Author PerfySchu
  * @Date 2019/1/18 10:33
  * @Version 1.0

@@ -1,8 +1,9 @@
+package getPi;
+
 import java.awt.*;
-import java.util.LinkedList;
 
 /**
- * @ClassName AlgoVisualizer
+ * @ClassName moneyproblem.AlgoVisualizer
  * @Author PerfySchu
  * @Date 2019/1/19 9:40
  * @Version 1.0
