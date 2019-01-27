@@ -84,10 +84,10 @@ public class AlgoFrame extends JFrame {
                     AlgoVisHelper.setColor(graphics2D, AlgoVisHelper.Indigo);
                 }
                 AlgoVisHelper.fillRectangel(graphics2D, i * w, canvasHeight - data.get(i), w - 1, data.get(i));
-                String desc = "当前已排完【"+data.orderedIndex+"】\n 未排中最小【"+data.get(data.currentMinIndex)+"】\n 当前扫描值【"+data.get(data.currentCompareIndex)+"】";
-                AlgoVisHelper.setColor(graphics2D, AlgoVisHelper.Green);
-                AlgoVisHelper.setFont(graphics2D, 30, AlgoVisHelper.Teal);
-                AlgoVisHelper.drawText(graphics2D, desc, canvasWitdh/2 , 20);
+//                String desc = "当前已排完【"+data.orderedIndex+"】\n 未排中最小【"+data.get(data.currentMinIndex)+"】\n 当前扫描值【"+data.get(data.currentCompareIndex)+"】";
+//                AlgoVisHelper.setColor(graphics2D, AlgoVisHelper.Green);
+//                AlgoVisHelper.setFont(graphics2D, 30, AlgoVisHelper.Teal);
+//                AlgoVisHelper.drawText(graphics2D, desc, canvasWitdh/2 , 20);
             }
         }
 

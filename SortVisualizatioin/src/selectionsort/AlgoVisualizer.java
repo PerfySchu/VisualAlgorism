@@ -68,9 +68,9 @@ public class AlgoVisualizer {
     }
 
     public static void main(String[] args) {
-        int sceneWidth = 1024;
-        int sceneHeight = 768;
-        int N = 100;
+        int sceneWidth = 600;
+        int sceneHeight = 600;
+        int N = 50;
         new AlgoVisualizer(sceneWidth, sceneHeight, N);
     }
 }
