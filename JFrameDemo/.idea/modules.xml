@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JFrameDemo.iml" filepath="$PROJECT_DIR$/JFrameDemo.iml" />
       <module fileurl="file://$PROJECT_DIR$/../MonteCarlo/MonteCarlo.iml" filepath="$PROJECT_DIR$/../MonteCarlo/MonteCarlo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SortVisualizatioin/SortVisualizatioin.iml" filepath="$PROJECT_DIR$/../SortVisualizatioin/SortVisualizatioin.iml" />
       <module fileurl="file://$PROJECT_DIR$/../Templates/Templates.iml" filepath="$PROJECT_DIR$/../Templates/Templates.iml" />
     </modules>
   </component>
