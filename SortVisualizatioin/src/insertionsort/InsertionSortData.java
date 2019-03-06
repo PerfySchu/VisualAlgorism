@@ -1,5 +1,7 @@
 package insertionsort;
 
+import java.util.Arrays;
+
 /**
  * @ClassName InsertionSortData
  * @Author PerfySchu
@@ -14,13 +16,27 @@ public class InsertionSortData {
     //当前索引
     public int currentIndex = -1;
 
-    public InsertionSortData(int N, int randomBound){
+    public InsertionSortData(int N, int randomBound, AlgoVisualizer.Type dataType){
         numbers = new int[N];
 
         for(int i=0; i<N; i++){
             //生成的数值大于0， 否则画出来看不到
             numbers[i] = (int)(Math.random()*randomBound) + 1;
         }
+        if(dataType == AlgoVisualizer.Type.NearlyOrdered){
+            Arrays.sort(numbers);
+            int swapTime = (int) (N * 0.02);
+            for(int i=0; i<swapTime; i++){
+                int a = (int) (Math.random() * N);
+                int b = (int) (Math.random() * N);
+                swap(a, b);
+            }
+
+        }
+    }
+
+    public InsertionSortData(int N, int randomBound){
+       this(N, randomBound, AlgoVisualizer.Type.Default);
     }
 
     public int N(){

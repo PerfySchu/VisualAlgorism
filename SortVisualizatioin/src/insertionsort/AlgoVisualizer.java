@@ -10,6 +10,11 @@ import java.awt.*;
  **/
 public class AlgoVisualizer {
 
+    public enum Type{
+        Default,
+        NearlyOrdered
+    }
+
     //数据
     private InsertionSortData data;
 
@@ -20,8 +25,12 @@ public class AlgoVisualizer {
     //TODO: 其他控制变量
 
     public AlgoVisualizer(int sceneWidth, int sceneHeight, int N){
+        this(sceneWidth, sceneHeight, N, Type.Default);
+    }
+
+    public AlgoVisualizer(int sceneWidth, int sceneHeight, int N, Type dataType){
         //初始化数据
-        data = new InsertionSortData(N, sceneHeight-100);
+        data = new InsertionSortData(N, sceneHeight-100, dataType);
 
 
 
