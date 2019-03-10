@@ -1,4 +1,4 @@
-package selectionsort;
+package MergeSort;
 
 /**
  * @ClassName MergeSortData
@@ -6,17 +6,12 @@ package selectionsort;
  * @Date 2019/1/25 13:20
  * @Version 1.0
  **/
-public class SelectionSortData {
-    private int[] numbers;
+public class MergeSortData {
+    public int[] numbers;
+    public int l, r;
+    public int mergeIndex;
 
-    // [0,1,2,.....,orderedIndex) 已排好序的索引
-    public int orderedIndex = -1;
-    //当前找到的最小值索引
-    public int currentMinIndex = -1;
-    //当前扫描到的索引
-    public int currentCompareIndex = -1;
-
-    public SelectionSortData(int N, int randomBound){
+    public MergeSortData(int N, int randomBound){
         numbers = new int[N];
 
         for(int i=0; i<N; i++){
