@@ -1,4 +1,4 @@
-package MergeSort;
+package mergesort;
 
 import javax.swing.*;
 import java.awt.*;
