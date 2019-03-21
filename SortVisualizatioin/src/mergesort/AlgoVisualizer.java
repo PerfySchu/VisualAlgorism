@@ -60,6 +60,7 @@ public class AlgoVisualizer {
 
     //自顶向下
     private void merge(int l, int mid, int r){
+        //copyOfRange()方法左闭右开，实际复制范围是 l 到 r  不包含 r+1
         int[] aux = Arrays.copyOfRange(data.numbers, l, r+1);
 
         //初始化，i指向左半部分的起始索引位置l，j指向右半部分的起始索引位置 mid + 1

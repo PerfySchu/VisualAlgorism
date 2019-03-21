@@ -1,7 +1,7 @@
 package selectionsort;
 
 /**
- * @ClassName MergeSortData
+ * @ClassName QuickSortData
  * @Author PerfySchu
  * @Date 2019/1/25 13:20
  * @Version 1.0
